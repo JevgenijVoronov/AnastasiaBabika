@@ -1,0 +1,40 @@
+.about-me {
+    display: flex;
+    align-items: center;
+}
+
+.about-me__text {
+    color: var(--white);
+    padding-right: 70px;
+}
+
+.about-me__text h2 {
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    padding-bottom: 20px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 769px) {
+    .about-me {
+        flex-direction: column-reverse;
+    }
+    .about-me__text {
+        padding: 0;
+    }
+    .about-me__text h2 {
+        text-align: center;
+    }
+    .about-me__text {
+        padding: 0;
+    }
+    .about-me__img {
+        width: 70%;
+    }
+}
+
+

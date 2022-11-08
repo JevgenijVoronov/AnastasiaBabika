@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img class="header__logo" src="./assets/logo.png">
+            <ul id="myLinks" class="header__nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <div class="header__social">
+                <a href="#"><img src="./assets/GithubIcon.png"></a>
+                <a href="#"><img src="./assets/LinkedInIcon.png"></a>
+            </div>
+            <a href="javascript:void(0);" class="header__btn" onclick="showHideElement()" style="color: white;">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+        <main>
+            <!-- main -->
+            <div class="main">
+                <h1 
+                    class="main__txt"
+                    data-animation="slideInDown"
+                    data-animation-delay=".2s"
+                >Hello world! I’m Anastasia Babika, <br>a <mark>Front-end developer</mark>, based in Riga.</h1>
+                <button 
+                    class="main__btn"
+                    data-animation="slideInUp"
+                    data-animation-delay=".7s"
+                >Check my resume</button>
+            </div>
+
+            <!-- about-me -->
+            <div id="id" class="about-me">
+                <div class="about-me__text" data-animation="slideInLeft" data-animation-delay=".8s">
+                    <h2>About Me</h2>
+                    <p>
+                        I took part in the development of modern interfaces, creation of <mark>UI solutions</mark> that meet the needs of users while studying new methodologies and empathizing with users.<br><br> 
+                        I had an opportunity to work on the design of different projects including <mark>websites</mark> and <mark>mobile applications</mark> for marketing as well as participated in other challenges.
+                    </p>
+                </div>
+                <img class="about-me__img" src="./assets/mainImg.png" data-animation="slideInRight" data-animation-delay=".9s">
+            </div>
+
+            <!-- skills -->
+            <div id="skills" class="skills">
+                <h3>Skills</h3>
+                <ul class="skills__list">
+                    <li class="skills__list-item" data-animation="fadeIn" data-animation-delay=".1s"><img src="./assets/html.svg">HTML</li>
+                    <li class="skills__list-item" data-animation="fadeIn" data-animation-delay=".2s"><img src="./assets/css.svg">CSS</li>
+                    <li class="skills__list-item" data-animation="fadeIn" data-animation-delay=".3s"><img src="./assets/js.svg">JAVASCRIPT</li>
+                    <li class="skills__list-item" data-animation="fadeIn" data-animation-delay=".4s"><img src="./assets/react.svg">ReactJS</li>
+                    <li class="skills__list-item" data-animation="fadeIn" data-animation-delay=".5s"><img src="./assets/git.svg">Git</li>
+                    <li class="skills__list-item" data-animation="fadeIn" data-animation-delay=".6s"><img src="./assets/github.svg">GitHub</li>
+                </ul>
+            </div>
+
+            <!-- projects -->
+            <div id="projects" class="project-section">
+                <h3>Projects</h3>
+                <div class="projects">
+                    <div class="project">
+                        <picture class="project__img">
+                            <source media="(max-width: 769px)" srcset="./assets/full-img.png">
+                            <img src="./assets/project-1.png">
+                        </picture>
+                        <div class="project__description">
+                            <h4>Expenses app</h4>
+                            <p>Money Manager makes managing personal finances as easy as pie! Now easily record your personal and business financial transactions, generate spending reports...</p>
+                            <ul class="project__skills">
+                                <li class="project__skills-item"><img src="./assets/html.svg">HTML</li>
+                                <li class="project__skills-item"><img src="./assets/css.svg">CSS</li>
+                                <li class="project__skills-item"><img src="./assets/js.svg">JAVASCRIPT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <picture class="project__img">
+                            <source media="(max-width: 769px)" srcset="./assets/full-img-2.png">
+                            <img src="./assets/project-2.png" >
+                        </picture>
+                        <div class="project__description">
+                            <h4>Expenses app</h4>
+                            <p>Money Manager makes managing personal finances as easy as pie! Now easily record your personal and business financial transactions, generate spending reports...</p>
+                            <ul class="project__skills">
+                                <li class="project__skills-item"><img src="./assets/html.svg">HTML</li>
+                                <li class="project__skills-item"><img src="./assets/css.svg">CSS</li>
+                                <li class="project__skills-item"><img src="./assets/js.svg">JAVASCRIPT</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- contacts -->
+            <div id="contacts" class="contacts">
+                <h3>Contacts</h3>
+                <div class="contact">
+                    <div class="contact__form">
+                        <form name="message" method="post">
+                            <label for="subject">Your Name</label>
+                            <input id="subject" type="text" value="" name="subject" placeholder="Your name">
+                            <label for="subject">Email</label>
+                            <input id="subject" type="text" value="" name="subject" placeholder="Your email">
+                            <label for="message">Message</label>
+                            <textarea id="message" type="text" value="" name="message" placeholder="Enter text"></textarea>
+                        </form>
+                        
+                        <button type="submit" form="form1" value="Submit">Send message</button>
+                    </div>
+
+                    <div class="contact__link contact__link_email">
+                        <img class="contact__link-email" src="./assets/email.svg">
+                        <div>
+                            <p>Email</p>
+                            <p>anastasijab@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__link contact__link_whatsapp">
+                        <img src="./assets/whatsapp.svg">
+                        <div>
+                            <p>Email</p>
+                            <p>anastasijab@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__link contact__link_message">
+                        <img src="./assets/message.svg">
+                        <div>
+                            <p>Email</p>
+                            <p>anastasijab@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__link contact__link_github">
+                        <img src="./assets/githubicon.svg">
+                        <div>
+                            <p>Email</p>
+                            <p>anastasijab@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>© 2022 Anastasija Babika</p>
+            <ul class="footer__nav">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="footer__social">
+                <a href="#"><img src="./assets/GithubIcon.png"></a>
+                <a href="#"><img src="./assets/LinkedInIcon.png"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/animation.js"></script>
+</body>
+</html>
