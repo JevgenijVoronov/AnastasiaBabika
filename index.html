@@ -7,13 +7,14 @@
         <meta charset="UTF-8">
         
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="container">
             <!-- header -->
             <header class="header">
                 <img class="header__logo" src="./assets/logo.png">
-                <ul class="header__nav">
+                <ul class="header__nav" id="myLinks">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -23,6 +24,9 @@
                     <a href=""><img src="./assets/GithubIcon.png"></a>
                     <a href=""><img src="./assets/LinkedInIcon.png"></a>
                 </div>
+                <a href="javascript:void(0);" class="header__icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </header>
             <main>
                 <!-- main -->
@@ -100,38 +104,56 @@
                     <h3>Contacts</h3>
                     <div class="contact">
                         <div class="contact__form">
-                            <form>
-                                <label>Your name</label>
-                                <input type="text" placeholder="Enter name">
-
-                                <label>Your email</label>
-                                <input type="text" placeholder="Enter email">
-
-                                <label>Your message</label>
-                                <textarea type="text" placeholder="Enter text"></textarea>
+                            <form name="message" method="post">
+                                <label for="subject">Your Name</label>
+                                <input id="subject" type="text" value="" name="subject" placeholder="Your name">
+                                <label for="subject">Email</label>
+                                <input id="subject" type="text" value="" name="subject" placeholder="Your email">
+                                <label for="message">Message</label>
+                                <textarea id="message" type="text" value="" name="message" placeholder="Enter text"></textarea>
                             </form>
-                            <button value="Submit">Send message</button>
+    
+                            <button type="submit" form="form1" value="Submit">Send message</button>
                         </div>
-
-                        <div class="contact__list contact__list_email">
-                            1
+    
+                        <div class="contact__link contact__link_email">
+                            <img class="contact__link-email" src="./assets/email.svg">
+                            <div>
+                                <p>Email</p>
+                                <p>anastasijab@gmail.com</p>
+                            </div>
                         </div>
-
-                        <div class="contact__list contact__list_whattsapp">
-                            2
+    
+                        <div class="contact__link contact__link_whatsapp">
+                            <img src="./assets/whatsapp.svg">
+                            <div>
+                                <p>Email</p>
+                                <p>anastasijab@gmail.com</p>
+                            </div>
                         </div>
-
-                        <div class="contact__list contact__list_message">
-                            3
+    
+                        <div class="contact__link contact__link_message">
+                            <img src="./assets/message.svg">
+                            <div>
+                                <p>Email</p>
+                                <p>anastasijab@gmail.com</p>
+                            </div>
                         </div>
-
-                        <div class="contact__list contact__list_github">
-                            4
+    
+                        <div class="contact__link contact__link_github">
+                            <img src="./assets/githubicon.svg">
+                            <div>
+                                <p>Email</p>
+                                <p>anastasijab@gmail.com</p>
+                            </div>
                         </div>
+    
                     </div>
                 </section>
+
             </main>
         </div>
         <script src="./js/scroll.js"></script>
+        <script src="./js/navigationBurger.js"></script>
     </body>
 </html>

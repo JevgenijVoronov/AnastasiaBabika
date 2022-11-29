@@ -15,7 +15,9 @@
     align-content: center;
     flex-wrap: wrap;
 }
-
+.header__icon {
+    display: none;
+}
 
 .header__nav a {
     color: var(--white);
@@ -38,15 +40,26 @@
 
 /* Media Queries */
 @media (max-width: 769px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5em 0;
+        align-items: center;
+    }
     .header,
     .header__nav {
         flex-direction: column;
         align-content: center;
-        
+        align-items: center;
     }
     .header__logo {
         width: 20px;
         height: 20px;
+    }
+    .header__nav {display: none;}
+    .header__icon {
+        display: block;
     }
 }
 
