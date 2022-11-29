@@ -1,39 +1,32 @@
-.project-section {
-    padding: 120px 0;
+.projects-wrapper {
+    padding: 150px 0;
 }
-
+.projects {
+    margin-top: 40px;
+}
 .project {
-    background: var(--light-main);
+    background-color: var(--main-light);
     border-radius: 8px;
     padding: 35px;
     display: flex;
-    margin-bottom: 20px;
-}
-
-.project-section h3 {
-    font-size: 64px;
-    font-weight: 900;
-    line-height: 64px;
-    letter-spacing: 0.5px;
-    text-align: center;
-    padding-bottom: 60px;
 }
 
 .project__img img {
-    height: 300px;
     width: 300px;
+    height: 300px;
 }
+
 .project__description {
-    padding-left: 40px;
-    width: 60%;
+    margin-left: 40px;
 }
+
 .project__description h4 {
     font-size: 32px;
     font-weight: 900;
     line-height: 38px;
     letter-spacing: 0.5px;
     text-align: left;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .project__description p {
@@ -42,44 +35,42 @@
     line-height: 36px;
     letter-spacing: 0.5px;
     text-align: left;
-    color: var(--light-grey);
+    color: #C9C9C9;
 }
 
-.project__skills {
-    display: flex;
-
-}
-
-.project__skills img {
-    padding: 0;
-    padding-right: 10px;
-    height: 20px;
-}
-
-.project__skills-item {
+.projects__skills {
     display: flex;
     padding-top: 30px;
-    padding-right: 20px;
-} 
+}
+.projects__skills img {
+    height: 34px;
+    padding: 0;
+    padding-right: 10px;
 
-/* ================================= 
-  Media Queries
-==================================== */
+}
 
+.projects__skills-item {
+    display: flex;
+    padding-right: 30px;
+    font-size: 24px;
+}
+
+/* Media Queries */
 @media (max-width: 769px) {
-    .project {
+    .project,
+    .projects__skills {
         flex-direction: column;
-
     }
-    .project__description {
-        padding: 0;
-        padding-left: 10px;
-        width: 100%;
-        padding-top: 20px;
-    }
-
     .project__img img {
         width: 100%;
         height: auto;
     }
+
+    .project__description {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
 }
+
+

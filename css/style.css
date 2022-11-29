@@ -2,21 +2,10 @@
 @import "./variables.css";
 @import "./common.css";
 
-@import "./animation.css";
 @import "./header.css";
 @import "./main.css";
-@import "./about-me.css";
+@import "./aboutme.css";
 @import "./skills.css";
-@import "./projects.css";
-@import "./contacts.css";
-@import "./footer.css";
-
-
-
-
-
-
-
-
-
+@import './projects.css';
+@import './contacts.css';
 

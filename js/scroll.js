@@ -1,14 +1,15 @@
-let lnks = document.querySelectorAll('a[href*="#"]');
+let links = document.querySelectorAll('a[href*="#"]');
 
-for (var i = 0; i < lnks.length; i++) {
-    lnks[i].onclick = function(e){
-    e.preventDefault();
-    let  b = this; 
-    let c = b.getAttribute("href").substring(1); 
-    let el = document.querySelectorAll(`div[id="${c}"]`)[0];
+for(let i = 0; i < links.length; i++) {
+    links[i].onclick = function(e) {
+        e.preventDefault();
+        let element = this;
+        let anchor = element.getAttribute('href').substring(1);
+        let focusElement = document.getElementById(anchor);
         window.scrollTo({
-            top: el.offsetTop -20, 
+            top: focusElement.offsetTop -20,
             behavior: "smooth"
         });
-    };
-}
+    }
+
+} 

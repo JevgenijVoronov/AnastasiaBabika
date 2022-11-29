@@ -1,40 +1,36 @@
 .about-me {
+    margin-top: 40px;
     display: flex;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .about-me__text {
-    color: var(--white);
-    padding-right: 70px;
+    padding-right: 40px;
 }
 
 .about-me__text h2 {
     font-size: 64px;
     font-weight: 900;
+    line-height: 64px;
     letter-spacing: 0.5px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
-/* ================================= 
-  Media Queries
-==================================== */
-
+/* Media Queries */
 @media (max-width: 769px) {
     .about-me {
         flex-direction: column-reverse;
     }
-    .about-me__text {
-        padding: 0;
-    }
     .about-me__text h2 {
+        margin-top: 20px;
         text-align: center;
     }
     .about-me__text {
-        padding: 0;
+        padding-right: 0px;
     }
     .about-me__img {
-        width: 70%;
+        width: 50%;
+        margin: 0 auto;
     }
 }
-
-
